@@ -8,6 +8,7 @@ class ArticlesController < ApplicationController
 
     def index
         @articles = Article.all
+        render 'list_articles'
     end
 
     def new
